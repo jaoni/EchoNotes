@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Lets `dart run drift_dev make-migrations` find the database, save
+          # a snapshot of each schema version in drift_schemas/ and generate
+          # the migration tests in test/drift/.
+          databases:
+            app_database: lib/core/database/app_database.dart
+          # Dates as ISO-8601 text instead of whole seconds, so they keep
+          # their milliseconds. The repository writes them in UTC, so they
+          # also sort correctly as text.
+          store_date_time_values_as_text: true

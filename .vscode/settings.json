@@ -1,0 +1,14 @@
+{
+  // The Flutter and Dart pinned in .fvmrc, for this project only. The paths
+  // are relative to this workspace and point through .fvm/, which FVM links
+  // to the SDK on each machine.
+  "dart.flutterSdkPath": ".fvm/versions/3.47.5",
+  "dart.sdkPath": ".fvm/versions/3.47.5/bin/cache/dart-sdk",
+  // .fvm/ links to the whole SDK: keep it out of search and file watching.
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm/**": true
+  }
+}

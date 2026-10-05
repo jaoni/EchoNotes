@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- What Android shows outside the app while recording: see
+     RecordingService.kt. The app's own screens get their text from Dart. -->
+<resources>
+    <string name="recording_channel">Recording</string>
+    <string name="recording_channel_description">Shows while EchoNotes is recording, with buttons to pause and stop.</string>
+    <string name="recording_stopped_channel">Recording stopped</string>
+    <string name="recording_stopped_channel_description">Tells you when a recording stopped by itself, for example at its time limit.</string>
+    <string name="recording_title">Recording</string>
+    <string name="recording_text">Tap to open EchoNotes</string>
+    <string name="recording_paused_title">Recording paused</string>
+    <string name="recording_paused_text">Paused at %1$s</string>
+    <string name="recording_pause">Pause</string>
+    <string name="recording_resume">Resume</string>
+    <string name="recording_stop">Stop</string>
+    <string name="recording_stopped_title">Recording stopped</string>
+</resources>

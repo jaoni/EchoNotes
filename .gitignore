@@ -1,0 +1,67 @@
+# Secrets. Never committed; only templates that hold names, not values, are kept.
+# Any .env file:
+.env
+.env.*
+!.env.example
+# Serverpod's secrets (API keys, database password), from Step 7a.
+# passwords.example.yaml lists the names:
+passwords.yaml
+# Signing keys and credentials (Android keystores, Apple keys and profiles,
+# service accounts):
+*.jks
+*.keystore
+key.properties
+*.p8
+*.p12
+*.mobileprovision
+*service-account*.json
+
+# FVM: the SDK pinned in .fvmrc is linked here on each machine. .fvmrc itself
+# is kept, so everyone uses the same Flutter and Dart.
+.fvm/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
